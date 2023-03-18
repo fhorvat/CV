@@ -3,7 +3,7 @@ name: Filip
 surname: Horvat
 position: "PhD student, Bioinformatician"
 address: "Institute of Molecular Genetics, Prague, Czech Republic"
-# profilepic: "./img/me.jpg"
+profilepic: "./img/me.jpg"
 # phone: +xxx xx xxx xxxx
 email: "fihorvat@gmail.com"
 github: fhorvat
@@ -25,8 +25,6 @@ library(vitae)
 library(scholar)
 library(dplyr)
 library(stringr)
-library(kableExtra)
-#rmarkdown::pandoc_version()
 ```
 
 # Research Interests
@@ -45,7 +43,7 @@ tribble(
   "PhD student - bioinformatics", "2017 - current", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Profiling and analysis of retrotransposon expression and silencing",
   "Specialist of science and research - bioinformatics", "2016 - 2017", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Control of gene expression during mammalian oocyte-to-embryo transition",
   "Intern - bioinformatics", "2015 - 2016", "University of Zagreb, Faculty of Science, Bioinformatics Group", "Zagreb", "Management, interpretation, visualization and statistical analysis of high-throughput sequencing data",
-  "Intern - wet lab", "Apr 2015 - Sep 2015", "Max F Perutz Laboratories, DNA Damage Response and Transcription Regulation", "Wien", "Activity of PARG protein in relation to loss of post-translational modifications in human cells"
+  "Intern - wet lab", "Apr 2015 - Sep 2015", "Max F Perutz Laboratories, DNA Damage Response and Transcription Regulation", "Vienna", "Activity of PARG protein in relation to loss of post-translational modifications in human cells"
 ) %>% 
   detailed_entries(what = what,
                    when = when,
