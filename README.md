@@ -2,6 +2,8 @@
 
 This repo contains my CV that was built in R using vitae package.
 
+[![CV](preview.png)](https://github.com/fhorvat/CV/blob/master/CV.pdf)
+
 ## About
 
 CV was built using [vitae](https://github.com/mitchelloharawild/vitae) package by Mitchell O'Hara-Wild with [HanZhang-psychs](https://github.com/HanZhang-psych/CV) CV and code used a as template.
@@ -16,4 +18,3 @@ CV was built using [vitae](https://github.com/mitchelloharawild/vitae) package b
 * `.bib` files: I have 2 `.bib` files that separately store info for publisheded papers and (one) book chapter. This were downloaded from Google Scholar, but can also be exported in your favorite citation manager (Mendeley, Zotero...)
 * `lua/strong.lua file`: Used to make my name bold in the publications.  
 
-[![CV](preview.png)](https://github.com/fhorvat/CV/blob/master/CV.pdf)
