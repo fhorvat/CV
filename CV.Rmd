@@ -1,0 +1,102 @@
+---
+name: Filip
+surname: Horvat
+position: "PhD student, Bioinformatician"
+address: "Institute of Molecular Genetics, Prague, Czech Republic"
+# profilepic: "./img/me.jpg"
+# phone: +xxx xx xxx xxxx
+email: "fihorvat@gmail.com"
+github: fhorvat
+linkedin: filip-horvat-6a8538b2
+orcid: 0000-0002-1896-7645
+# googlescholar: "aA_cIdYAAAAJ"
+date: "`r  Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%B %Y')`"
+# aboutme: "Bioinformatician and a PhD student at the Laboratory of Epigenetic Regulations"
+headcolor: 990000 # 464646 for all black
+csl: apa-cv.csl # change this if you want to use other citation styles
+output: 
+  vitae::awesomecv:
+    pandoc_args: ["--lua-filter=lua/strong.lua"] 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(scholar)
+library(dplyr)
+library(stringr)
+library(kableExtra)
+#rmarkdown::pandoc_version()
+```
+
+# Research Interests
+
+Bioinformatics; computational biology; transcriptomics; developmental biology; small RNAs; retrotransposons
+
+
+# Employment
+
+```{r employment, eval = T}
+tribble(
+  ~what, ~when, ~with, ~where, ~why,
+  "PhD student - bioinformatics", "2017 - current", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Bioinformatic analysis of RNA dynamics in mammalian oocytes and early embryos",
+  "PhD student - bioinformatics", "2017 - current", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Maternal mRNA degradation",
+  "PhD student - bioinformatics", "2017 - current", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Roles and distribution of small RNAs and long non-coding RNAs",
+  "PhD student - bioinformatics", "2017 - current", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Profiling and analysis of retrotransposon expression and silencing",
+  "Specialist of science and research - bioinformatics", "2016 - 2017", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Control of gene expression during mammalian oocyte-to-embryo transition",
+  "Intern - bioinformatics", "2015 - 2016", "University of Zagreb, Faculty of Science, Bioinformatics Group", "Zagreb", "Management, interpretation, visualization and statistical analysis of high-throughput sequencing data",
+  "Intern - wet lab", "Apr 2015 - Sep 2015", "Max F Perutz Laboratories, DNA Damage Response and Transcription Regulation", "Wien", "Activity of PARG protein in relation to loss of post-translational modifications in human cells"
+) %>% 
+  detailed_entries(what = what,
+                   when = when,
+                   with = with,
+                   where = where, 
+                   why = why)
+```
+
+
+# Education
+
+```{r education}
+tribble(
+  ~what, ~when, ~with, ~where, 
+  "PhD in Developmental and Cell Biology", "2017 - current", "Charles University, Faculty of Science","Prague",
+  "Master in Molecular Biology", "2013 - 2016", "University of Zagreb, Faculty of Science", "Zagreb",
+  "Bachelor in Molecular Biology", "2009 - 2013", "University of Zagreb, Faculty of Science", "Zagreb"
+) %>% 
+  detailed_entries(what = what,
+                   when = when,
+                   with = with,
+                   where = where)
+```
+
+
+# Skills
+
+```{r skills}
+tribble(
+  ~with, ~what,
+  "Programming languages", "R (advanced), Bash (intermediate), Python (beginner)",
+  "R framework", "Shiny, RMarkdown, Bioconductor, tidyverse, ggplot2, plotly",
+  "Other computational tools", "Unix/Linux, Command line interface, Nextflow, Git",
+  "Languages", "English (fluent), German (basic), Croatian (native)"
+) %>% 
+  detailed_entries(with = with,
+                   what = what)
+```
+
+\pagebreak
+
+# Peer-reviewed Publications
+
+```{r}
+bibliography_entries("citations.bib")
+```
+
+
+# Book Chapters
+
+```{r}
+bibliography_entries("book_chapters.bib")
+```
+
