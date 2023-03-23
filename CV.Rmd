@@ -74,10 +74,9 @@ tribble(
 ```{r teaching, eval = T}
 tribble(
   ~what, ~when, ~with, ~where, ~why,
-  "Computational Genomics module", "2017 - 2023", "University of Zagreb, Faculty of Science, Bioinformatics Group", "Zagreb", "I annually participated in the Algorithms and programming course for 2nd year master students where I gave lectures in R programming, created and graded practical homework assignments, designed and chaired hackaton sessions and provided consultations to approx. 10 students per year",
+  "Computational Genomics module", "2017 - 2023", "University of Zagreb, Faculty of Science, Bioinformatics Group", "Zagreb", "I annually participated as one of the lecturers in the Algorithms and programming course for 2nd year master students where I gave lectures in R programming, created and graded practical homework assignments, designed and chaired hackaton sessions and provided consultations to approx. 10 students per year",
   "Summer School in Bioinformatics", "2022", "Mediterranean Institute for Life Sciences", "Split", "I presented a practical, hands on lecture about basics of RNA-seq data analysis for 30 participants",
   "Summer School in Bioinformatics", "2022", "Mediterranean Institute for Life Sciences", "Split", "I designed and taught a 3 days interactive workshop where I tutored 6 participants how to find and download RNA-seq data from published papers, do the quality check, trim adapters and map reads to the genome using Galaxy framework, with subsequent differential expression and exploratory analysis done in R",
-  "Private mentorship to collegues", "2017-current", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "I gave private lectures with goal to introduce several of my collegues working in laboratory reseach to the basics of computational biology and R programming",
 ) %>% 
   detailed_entries(what = what,
                    when = when,
@@ -86,6 +85,7 @@ tribble(
                    why = why)
 ```
 
+\pagebreak
 
 # Peer-reviewed Publications
 
@@ -114,18 +114,4 @@ tribble(
   detailed_entries(with = with,
                    what = what)
 ```
-
-```{r skills_2, eval = F}
-tribble(
-  ~with, ~why,
-  "Computational", "Programming languages: R (advanced), Bash (intermediate), Python (beginner)",
-  "Computational", "R framework: Shiny, RMarkdown, Bioconductor, tidyverse, ggplot2, plotly",
-  "Computational", "Other computational tools: Unix/Linux, Command line interface, Nextflow, Git",
-  "Languages", "English (fluent), German (basic), Croatian (native)"
-) %>% 
-  detailed_entries(with = with, 
-                   why = why)
-```
-
-
 
