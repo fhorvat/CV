@@ -10,7 +10,7 @@ CV was built using [vitae](https://github.com/mitchelloharawild/vitae) package b
 
 ## Main Files
 
-* `CV.pdf`: Final CV in pdf format.
+* `CV.pdf`: Final CV.
 * `CV.rmd`: The R Markdown code used to create PDF.
 * `get_data.R`: Code to get ORCID and Google Scholar data
 * `awesome-cv.cls`: This LaTeX template is in charge of the overall style of your CV. [vitae](https://github.com/mitchelloharawild/vitae) supports several templates; this one was tweeked by HanZhang-psychs and further by me to slightly chage font size, color, & spacing. If you prefer the original, delete this file. 

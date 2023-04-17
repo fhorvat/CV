@@ -3,7 +3,7 @@ name: Filip
 surname: Horvat
 position: "Bioinformatician"
 address: "Institute of Molecular Genetics, Prague, Czech Republic"
-profilepic: "./img/me.jpg"
+# profilepic: "./img/me.jpg"
 phone: +385 91 728 4868
 email: "fihorvat@gmail.com"
 github: fhorvat
@@ -34,7 +34,7 @@ library(kableExtra)
 
 # Professional Profile
 
-Highly skilled and experienced computational biologist finishing a PhD in the field. Strong expertise in developing and implementing computational methods for analyzing complex biological data, including genomic and transcriptomic data. Proficient in programming languages such as R and Bash, with experience working in Linux environments. Extensive experience collaborating with multidisciplinary and international teams of scientists on elucidating mechanisms of various biological processes. Seeking a challenging role in industry where my skills and experience can be leveraged to advance scientific discovery and bridge the gap between the computational and experimental research. 
+Highly skilled and experienced computational biologist finishing a PhD in the field. Strong expertise in developing and implementing computational methods for analyzing complex biological data, including genomic and transcriptomic data. Proficient in programming languages such as R and Bash, with experience working in Linux environments. Extensive experience collaborating with multidisciplinary and international teams of scientists on elucidating mechanisms of various biological processes. Seeking a challenging role where my skills and experience can be leveraged to advance scientific discovery and bridge the gap between the computational and experimental research. 
 
 
 # Professional Experience
