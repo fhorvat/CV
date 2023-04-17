@@ -4,14 +4,14 @@ surname: Horvat
 position: "Bioinformatician"
 address: "Institute of Molecular Genetics, Prague, Czech Republic"
 profilepic: "./img/me.jpg"
-phone: +385 91 728 4868
+# phone: +xxx xx xxx xxxx
 email: "fihorvat@gmail.com"
 github: fhorvat
 linkedin: filip-horvat-6a8538b2
 orcid: 0000-0002-1896-7645
-# googlescholar: "aA_cIdYAAAAJ"
+googlescholar: "aA_cIdYAAAAJ"
 date: "`r  Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%B %Y')`"
-# aboutme: "Bioinformatician and a PhD student at the Laboratory of Epigenetic Regulations"
+# aboutme: "Bioinformatician at the Laboratory of Epigenetic Regulations"
 headcolor: 990000 # 464646 for all black
 csl: apa-cv.csl # change this if you want to use other citation styles
 output: 
