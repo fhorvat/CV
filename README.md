@@ -2,7 +2,7 @@
 
 This repo contains my CV that was built in R using vitae package.
 
-[![CV](preview.png)](https://github.com/fhorvat/CV/blob/master/CV.pdf)
+[![CV](Preview.png)](https://github.com/fhorvat/CV/blob/master/CV.pdf)
 
 ## About
 
