@@ -60,11 +60,10 @@
 \photo{./img/me.jpg}
 \name{Filip}{Horvat}
 
-\position{Bioinformatician}
-\address{Institute of Molecular Genetics, Prague, Czech Republic}
+\address{Max Perutz Labs, Vienna, Austria}
 
 \email{\href{mailto:fihorvat@gmail.com}{\nolinkurl{fihorvat@gmail.com}}}
-\orcid{orcid.org/0000-0002-1896-7645}
+\googlescholar{scholar.google.com/citations?user=aA\_cIdYAAAAJ}
 \github{github.com/fhorvat}
 \linkedin{linkedin.com/in/filip-horvat-6a8538b2}
 
@@ -73,6 +72,8 @@
 % \skype{skype-id}
 % \reddit{reddit-id}
 
+\quote{Bioinformatics postdoc at the DNA Damage Response and
+Transcription Regulation Lab}
 
 \usepackage{booktabs}
 
@@ -94,7 +95,7 @@
 \setlength{\cslhangindent}{1.5em}
 \newlength{\csllabelwidth}
 \setlength{\csllabelwidth}{2em}
-\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
  {% don't indent paragraphs
   \setlength{\parindent}{0pt}
   % turn on hanging indent if param 1 is 1
@@ -120,6 +121,10 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 % 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {February 2025}
+    {Filip Horvat~~~·~~~Curriculum Vitae}
+  {\thepage}
 
 
 %-------------------------------------------------------------------------------
@@ -132,51 +137,34 @@
 \hypertarget{profile}{%
 \section{Profile}\label{profile}}
 
-Highly skilled and experienced computational biologist finishing a PhD
-in the field with strong expertise in developing and implementing
-computational methods for analyzing complex biological data. Proficient
-in programming languages such as R and Bash and comfortable with working
-in Linux environments utilizing high-performance clusters. Possessing
-extensive experience collaborating with multidisciplinary and
-international teams of scientists on elucidating mechanisms of various
-biological processes. Seeking a challenging role in industry where my
-skills and experience can be leveraged to advance scientific discovery
-and bridge the gap between the computational and experimental research.
+Highly skilled computational biologist with strong expertise in
+developing and implementing computational methods for analyzing complex
+biological data. Proficient in R programming framework and comfortable
+with working in Linux environments utilizing high-performance clusters.
+Possesses extensive experience working in multidisciplinary scientific
+teams on elucidating mechanisms of biological processes.
 
 \hypertarget{professional-competence}{%
 \section{Professional Competence}\label{professional-competence}}
 
 \begin{cventries}
     \cventry{}{Computational biology and bioinformatics}{}{}{\begin{cvitems}
-\item Computational integration of high-throughput datasets, from experimental design to data analysis
-\item Extensive experience in analysing RNA-seq, small RNA-seq, ChIP-seq, ATAC-seq and WGBS-seq data
-\item Familiarity with single-cell genomics and transcriptomics datasets
-\item Skilled in curation and managment of both in-house produced as well as publicly availible datasets
-\item Experienced in processing datasets produced with 3rd and 4th generation sequencing methods (PacBio, Nanopore)
+\item Extensive experience in analyzing single-cell RNA-seq data, including preprocessing, quality control, normalization, batch effect correction, integration, clustering, differential expression analysis, and trajectory inference
+\item Strong background in transcriptomics data analysis: RNA-seq, small RNA-seq and TT-seq
+\item Significant expertise with genomics and epigenomics data analysis: ChIP-seq, CUT\&RUN, ATAC-seq, WGBS-seq
+\item Familiarity with processing datasets produced with 3rd and 4th generation sequencing methods: PacBio, Nanopore
 \item Solid understanding of essential machine-learing algorithms
-\item Demonstrated knowledge of various bioinformatic algorithms and procedures, such as sequence alignment, differential expression and gene ontology analysis, genome and transcriptome assembly methods, phylogenetic analysis and variant calling
 \end{cvitems}}
 \end{cventries}
 
-\begin{cventries}
-    \cventry{}{Personal skills}{}{}{\begin{cvitems}
-\item Highly motivated and dedicated scientist with a passion for learning and implementing new technologies
-\item Team player that thrives in diverse teams, with excellent interpersonal and communication skills
-\item Proficient in presenting intricate data, as evidenced by peer-reviewed publications
-\item Strong ability to discuss data, modeling, and analytics with non-computational team members
-\end{cvitems}}
-\end{cventries}
-
-\begin{cventries}
-    \cventry{}{Software and languages}{}{}{}\vspace{-4.0mm}
-\end{cventries}\begin{table}[H]
+\begin{table}[H]
 \centering\begingroup\fontsize{11}{13}\selectfont
 
-\begin{tabular}{>{\centering\arraybackslash}p{5.5cm}>{\centering\arraybackslash}p{5.5cm}>{\centering\arraybackslash}p{5.5cm}}
+\begin{tabular}{>{\centering\arraybackslash}p{6.5cm}>{\centering\arraybackslash}p{6.5cm}}
 \toprule
-\textcolor[HTML]{464646}{\textbf{Programming languages}} & \textcolor[HTML]{464646}{\textbf{R framework}} & \textcolor[HTML]{464646}{\textbf{Other computational tools}}\\
+\textcolor[HTML]{464646}{\textbf{Programming languages}} & \textcolor[HTML]{464646}{\textbf{R framework}}\\
 \midrule
-\textcolor[HTML]{464646}{R (advanced) -- Bash (intermediate) -- Python (beginner)} & \textcolor[HTML]{464646}{Shiny -- RMarkdown -- Bioconductor -- tidyverse -- ggplot2 -- plotly} & \textcolor[HTML]{464646}{Unix/Linux -- Command line interface -- High-performance clusters -- Nextflow -- Git -- Docker -- Conda}\\
+\textcolor[HTML]{464646}{R (advanced) | Bash (advanced) | Python (beginner)} & \textcolor[HTML]{464646}{Bioconductor | Seurat | Shiny   RMarkdown | tidyverse | ggplot2}\\
 \bottomrule
 \end{tabular}
 \endgroup{}
@@ -185,11 +173,31 @@ and bridge the gap between the computational and experimental research.
 \begin{table}[H]
 \centering\begingroup\fontsize{11}{13}\selectfont
 
-\begin{tabular}{>{\centering\arraybackslash}p{5cm}}
+\begin{tabular}{>{\centering\arraybackslash}p{6.5cm}>{\centering\arraybackslash}p{6.5cm}}
+\toprule
+\textcolor[HTML]{464646}{\textbf{Reproducibility and Automation}} & \textcolor[HTML]{464646}{\textbf{General computational tools}}\\
+\midrule
+\textcolor[HTML]{464646}{Nextflow | Git | Docker | Singularity   Conda} & \textcolor[HTML]{464646}{Unix/Linux system administration   High-performance clusters (HPC)}\\
+\bottomrule
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\begin{cventries}
+    \cventry{}{Personal skills}{}{}{\begin{cvitems}
+\item Highly motivated and dedicated scientist with a passion for learning and implementing new technologies
+\item Team player with excellent interpersonal and communication skills
+\item Proficient in presenting intricate data, as evidenced by peer-reviewed publications
+\item Strong ability to discuss data, modeling, and analytics with non-computational team members
+\end{cvitems}}
+\end{cventries}\begin{table}[H]
+\centering\begingroup\fontsize{11}{13}\selectfont
+
+\begin{tabular}{>{\centering\arraybackslash}p{6.5cm}}
 \toprule
 \textcolor[HTML]{464646}{\textbf{Languages}}\\
 \midrule
-\textcolor[HTML]{464646}{English (fluent) -- German (basic) -- Croatian (native)}\\
+\textcolor[HTML]{464646}{English (fluent) | German (basic)   Croatian (native)}\\
 \bottomrule
 \end{tabular}
 \endgroup{}
@@ -201,7 +209,7 @@ and bridge the gap between the computational and experimental research.
 \section{Education}\label{education}}
 
 \begin{cventries}
-    \cventry{PhD in Developmental and Cell Biology}{Charles University, Faculty of Science}{Prague}{2017 - current}{}\vspace{-4.0mm}
+    \cventry{PhD in Developmental and Cell Biology}{Charles University, Faculty of Science}{Prague}{2017 - 2023}{}\vspace{-4.0mm}
     \cventry{Master in Molecular Biology}{University of Zagreb, Faculty of Science}{Zagreb}{2013 - 2016}{}\vspace{-4.0mm}
     \cventry{Bachelor in Molecular Biology}{University of Zagreb, Faculty of Science}{Zagreb}{2009 - 2013}{}\vspace{-4.0mm}
 \end{cventries}
@@ -210,19 +218,18 @@ and bridge the gap between the computational and experimental research.
 \section{Professional Experience}\label{professional-experience}}
 
 \begin{cventries}
-    \cventry{PhD student - computational research}{Institute of Molecular Genetics, Laboratory of Epigenetic Regulations}{Prague}{2017 - current}{\begin{cvitems}
-\item Computational analysis and integration of high-throughput datasets
+    \cventry{Postdoc - computational research}{Max Perutz Labs, DNA Damage Response and Transcription Regulation}{Vienna}{2024 - current}{\begin{cvitems}
+\item Roles of proteins with SPOC domain in transcription regulation
+\item Regulation of neuronal gene expression and differentiation
+\item Molecular mechanisms of radiation-induced anti-tumor immunogenicity
+\end{cvitems}}
+    \cventry{PhD student - computational research}{Institute of Molecular Genetics, Laboratory of Epigenetic Regulations}{Prague}{2017 - 2023}{\begin{cvitems}
+\item Bioinformatic analysis of RNA dynamics in mammalian oocytes and early embryos
 \item Developing pipelines for automatic processing of next generation sequencing datasets generated in the lab
-\item Bioinformatic contribution to 10 high-level publications
+\item Bioinformatic contribution to 12 high-level publications
 \end{cvitems}}
     \cventry{Specialist of science and research - computational research}{Institute of Molecular Genetics, Laboratory of Epigenetic Regulations}{Prague}{2016 - 2017}{\begin{cvitems}
 \item Statistical and differential expression analysis of RNA-seq datasets
-\end{cvitems}}
-    \cventry{Intern - computational research}{University of Zagreb, Faculty of Science, Bioinformatics Group}{Zagreb}{2015 - 2016}{\begin{cvitems}
-\item Management, interpretation, visualization, and statistical analysis of high-throughput sequencing data
-\end{cvitems}}
-    \cventry{Intern - laboratory research}{Max F Perutz Laboratories, DNA Damage Response and Transcription Regulation}{Vienna}{Apr 2015 - Sep 2015}{\begin{cvitems}
-\item Hands-on experience with various techniques such as PCR, gel electrophoresis, cell culture and DNA extraction
 \end{cvitems}}
 \end{cventries}
 
@@ -239,8 +246,9 @@ and bridge the gap between the computational and experimental research.
 \end{cvitems}}
 \end{cventries}
 
-\hypertarget{peer-reviewed-publications}{%
-\section{Peer-reviewed Publications}\label{peer-reviewed-publications}}
+\hypertarget{selected-peer-reviewed-publications}{%
+\section{Selected Peer-reviewed
+Publications}\label{selected-peer-reviewed-publications}}
 
 \footnotesize
 
@@ -307,15 +315,6 @@ Franke, V., Ganesh, S., Karlic, R., Malik, R., Pasulka, J.,
 J., et al. (2017). Long terminal repeats power evolution of genes and
 gene expression programs in mammalian oocytes and zygotes. \emph{Genome
 Research}, \emph{27}(8), 1384--1394.
-
-\hypertarget{book-chapters}{%
-\section{Book Chapters}\label{book-chapters}}
-
-\hypertarget{bibliography}{}
-\leavevmode\vadjust pre{\hypertarget{ref-michal_cognitive_2021}{}}%
-\textbf{Horvat, F.}, \& Svoboda, P. (2019). Microarray-based
-transcriptomics of early mammalian development. In \emph{Advances in
-disease models}. OPTIO CZ.
 
 
 

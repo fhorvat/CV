@@ -1,17 +1,17 @@
 ---
 name: Filip
 surname: Horvat
-position: "Bioinformatician"
-address: "Institute of Molecular Genetics, Prague, Czech Republic"
+# position: "Bioinformatician"
+address: "Max Perutz Labs, Vienna, Austria"
 profilepic: "./img/me.jpg"
 # phone: +xxx xx xxx xxxx
 email: "fihorvat@gmail.com"
 github: "github.com/fhorvat"
 linkedin: "linkedin.com/in/filip-horvat-6a8538b2"
-orcid: "orcid.org/0000-0002-1896-7645"
-# googlescholar: "scholar.google.com/citations?user=aA_cIdYAAAAJ"
+# orcid: "orcid.org/0000-0002-1896-7645"
+googlescholar: "scholar.google.com/citations?user=aA_cIdYAAAAJ"
 date: "`r  Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%B %Y')`"
-# aboutme: "Bioinformatician and a PhD student at the Laboratory of Epigenetic Regulations"
+aboutme: "Bioinformatics postdoc at the DNA Damage Response and Transcription Regulation Lab"
 headcolor: 990000 # 464646 for all black
 csl: apa-cv.csl # change this if you want to use other citation styles
 output: 
@@ -34,68 +34,67 @@ library(kableExtra)
 
 # Profile
 
-Highly skilled and experienced computational biologist finishing a PhD in the field with strong expertise in developing and implementing computational methods for analyzing complex biological data. Proficient in programming languages such as R and Bash and comfortable with working in Linux environments utilizing high-performance clusters. Possessing extensive experience collaborating with multidisciplinary and international teams of scientists on elucidating mechanisms of various biological processes. Seeking a challenging role in industry where my skills and experience can be leveraged to advance scientific discovery and bridge the gap between the computational and experimental research. 
+Highly skilled computational biologist with strong expertise in developing and implementing computational methods for analyzing complex biological data. Proficient in R programming framework and comfortable with working in Linux environments utilizing high-performance clusters. Possesses extensive experience working in multidisciplinary scientific teams on elucidating mechanisms of biological processes.
 
 # Professional Competence
 ```{r competence_computational, eval = T}
 tribble(
   ~with, ~why,
-  "Computational biology and bioinformatics", "Computational integration of high-throughput datasets, from experimental design to data analysis",
-  "Computational biology and bioinformatics", "Extensive experience in analysing RNA-seq, small RNA-seq, ChIP-seq, ATAC-seq and WGBS-seq data",
-  "Computational biology and bioinformatics", "Familiarity with single-cell genomics and transcriptomics datasets",
-  "Computational biology and bioinformatics", "Skilled in curation and managment of both in-house produced as well as publicly availible datasets",
-  "Computational biology and bioinformatics", "Experienced in processing datasets produced with 3rd and 4th generation sequencing methods (PacBio, Nanopore)",
-  "Computational biology and bioinformatics", "Solid understanding of essential machine-learing algorithms",
-  "Computational biology and bioinformatics", "Demonstrated knowledge of various bioinformatic algorithms and procedures, such as sequence alignment, differential expression and gene ontology analysis, genome and transcriptome assembly methods, phylogenetic analysis and variant calling"
-  
+  "Computational biology and bioinformatics", "Extensive experience in analyzing single-cell RNA-seq data, including preprocessing, quality control, normalization, batch effect correction, integration, clustering, differential expression analysis, and trajectory inference",
+  "Computational biology and bioinformatics", "Strong background in transcriptomics data analysis: RNA-seq, small RNA-seq and TT-seq",
+  "Computational biology and bioinformatics", "Significant expertise with genomics and epigenomics data analysis: ChIP-seq, CUT&RUN, ATAC-seq, WGBS-seq",
+  "Computational biology and bioinformatics", "Familiarity with processing datasets produced with 3rd and 4th generation sequencing methods: PacBio, Nanopore",
+  "Computational biology and bioinformatics", "Solid understanding of essential machine-learing algorithms"
 ) %>% 
   detailed_entries(with = with,
                    why = why)
 ```
 
+```{r competence_table, eval = T}
+tribble(
+  ~`Programming languages`, ~`R framework`, 
+  "R (advanced) | Bash (advanced) | Python (beginner)",
+  "Bioconductor | Seurat | Shiny   RMarkdown | tidyverse | ggplot2",
+) %>% 
+  kable(booktabs = T, align = "c", escape = F, format = "latex") %>% 
+  kable_styling(full_width = F, font_size = 11, latex_options = "HOLD_position") %>% 
+  row_spec(0, bold = T, color = "#464646") %>%  
+  row_spec(1, bold = F, color = "#464646") %>%  
+  column_spec(column = 1:2, width = "6.5cm")
+
+tribble(
+  ~`Reproducibility and Automation`, ~`General computational tools`, 
+  "Nextflow | Git | Docker | Singularity   Conda",
+  "Unix/Linux system administration   High-performance clusters (HPC)",
+) %>% 
+  kable(booktabs = T, align = "c", escape = F, format = "latex") %>% 
+  kable_styling(full_width = F, font_size = 11, latex_options = "HOLD_position") %>% 
+  row_spec(0, bold = T, color = "#464646") %>%  
+  row_spec(1, bold = F, color = "#464646") %>%  
+  column_spec(column = 1:2, width = "6.5cm")
+```
 
 ```{r competence_personal, eval = T}
 tribble(
   ~with, ~why,
   "Personal skills", "Highly motivated and dedicated scientist with a passion for learning and implementing new technologies", 
-  "Personal skills", "Team player that thrives in diverse teams, with excellent interpersonal and communication skills",
+  "Personal skills", "Team player with excellent interpersonal and communication skills",
   "Personal skills", "Proficient in presenting intricate data, as evidenced by peer-reviewed publications",
   "Personal skills", "Strong ability to discuss data, modeling, and analytics with non-computational team members"
   
 ) %>% 
   detailed_entries(with = with,
                    why = why)
-```
-
-
-```{r competence_table, eval = T}
-tribble(
-  ~with,
-  "Software and languages"
-) %>% 
-  detailed_entries(with = with)
 
 tribble(
-  ~`Programming languages`, ~`R framework`, ~`Other computational tools`, 
-  "R (advanced) -- Bash (intermediate) -- Python (beginner)",
-  "Shiny -- RMarkdown -- Bioconductor -- tidyverse -- ggplot2 -- plotly",
-  "Unix/Linux -- Command line interface -- High-performance clusters -- Nextflow -- Git -- Docker -- Conda", 
+  ~`Languages`, 
+  "English (fluent) | German (basic)   Croatian (native)",
 ) %>% 
   kable(booktabs = T, align = "c", escape = F, format = "latex") %>% 
   kable_styling(full_width = F, font_size = 11, latex_options = "HOLD_position") %>% 
   row_spec(0, bold = T, color = "#464646") %>%  
   row_spec(1, bold = F, color = "#464646") %>%  
-  column_spec(column = 1:3, width = "5.5cm")
-
-tribble(
-  ~Languages, 
-  "English (fluent) -- German (basic) -- Croatian (native)"
-) %>% 
-  kable(booktabs = T, align = "c", escape = F, format = "latex") %>% 
-  kable_styling(full_width = F, font_size = 11, latex_options = "HOLD_position") %>% 
-  row_spec(0, bold = T, color = "#464646") %>%  
-  row_spec(1, bold = F, color = "#464646") %>%  
-  column_spec(column = 1, width = "5cm")
+  column_spec(column = 1, width = "6.5cm")
 ```
 
 \pagebreak
@@ -105,7 +104,7 @@ tribble(
 ```{r education}
 tribble(
   ~what, ~when, ~with, ~where, 
-  "PhD in Developmental and Cell Biology", "2017 - current", "Charles University, Faculty of Science","Prague",
+  "PhD in Developmental and Cell Biology", "2017 - 2023", "Charles University, Faculty of Science","Prague",
   "Master in Molecular Biology", "2013 - 2016", "University of Zagreb, Faculty of Science", "Zagreb",
   "Bachelor in Molecular Biology", "2009 - 2013", "University of Zagreb, Faculty of Science", "Zagreb"
 ) %>% 
@@ -120,12 +119,13 @@ tribble(
 ```{r employment, eval = T}
 tribble(
   ~what, ~when, ~with, ~where, ~why,
-  "PhD student - computational research", "2017 - current", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Computational analysis and integration of high-throughput datasets",
-  "PhD student - computational research", "2017 - current", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Developing pipelines for automatic processing of next generation sequencing datasets generated in the lab",
-  "PhD student - computational research", "2017 - current", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Bioinformatic contribution to 10 high-level publications",
-  "Specialist of science and research - computational research", "2016 - 2017", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Statistical and differential expression analysis of RNA-seq datasets",
-  "Intern - computational research", "2015 - 2016", "University of Zagreb, Faculty of Science, Bioinformatics Group", "Zagreb", "Management, interpretation, visualization, and statistical analysis of high-throughput sequencing data",
-  "Intern - laboratory research", "Apr 2015 - Sep 2015", "Max F Perutz Laboratories, DNA Damage Response and Transcription Regulation", "Vienna", "Hands-on experience with various techniques such as PCR, gel electrophoresis, cell culture and DNA extraction"
+  "Postdoc - computational research", "2024 - current", "Max Perutz Labs, DNA Damage Response and Transcription Regulation", "Vienna", "Roles of proteins with SPOC domain in transcription regulation",
+  "Postdoc - computational research", "2024 - current", "Max Perutz Labs, DNA Damage Response and Transcription Regulation", "Vienna", "Regulation of neuronal gene expression and differentiation",
+  "Postdoc - computational research", "2024 - current", "Max Perutz Labs, DNA Damage Response and Transcription Regulation", "Vienna", "Molecular mechanisms of radiation-induced anti-tumor immunogenicity",
+  "PhD student - computational research", "2017 - 2023", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Bioinformatic analysis of RNA dynamics in mammalian oocytes and early embryos",
+  "PhD student - computational research", "2017 - 2023", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Developing pipelines for automatic processing of next generation sequencing datasets generated in the lab",
+  "PhD student - computational research", "2017 - 2023", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Bioinformatic contribution to 12 high-level publications",
+  "Specialist of science and research - computational research", "2016 - 2017", "Institute of Molecular Genetics, Laboratory of Epigenetic Regulations", "Prague", "Statistical and differential expression analysis of RNA-seq datasets"
 ) %>% 
   detailed_entries(what = what,
                    when = when,
@@ -152,7 +152,7 @@ tribble(
 ```
 
 
-# Peer-reviewed Publications
+# Selected Peer-reviewed Publications
 
 \footnotesize
 
@@ -161,10 +161,3 @@ bibliography_entries("citations.bib")
 ```
 
 <!-- For the full list of publications please see: https://scholar.google.com/citations?user=aA_cIdYAAAAJ&hl=en -->
-
-# Book Chapters
-
-```{r}
-bibliography_entries("book_chapters.bib")
-```
-
